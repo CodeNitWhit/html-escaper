@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color:#7b84d1;
+    background-color:#8a5101;
 }
 
 button {
@@ -19,7 +19,7 @@ button {
 
 .tile {
     border-style:none;
-    background-color: #d3d6f2;
+    background-color: #f5c98e;
     border-radius:1%;
     overflow:scroll;
     overflow-x:hidden;
@@ -28,12 +28,12 @@ button {
 /*--TITLE/HEADER--*/
 #title {
     text-align:center;
-    color:#d3d6f2;
+    color:#f5c98e;
     text-shadow:2px 2px black;
     height:7vh;
     margin:0;
     font-family: 'YuseiMagic-Regular';
-    font-size: 25px;
+    font-size: 35px;
 }
 
 /*--BODY--*/
@@ -54,10 +54,11 @@ button {
         display:flex;
         flex-direction:column;
     }
-    #tile {
+    .tile {
         width: 90vw;
         height:38vh;
         margin:0 auto;
+        margin-bottom: 10px;
     }
 }
 
@@ -112,6 +113,25 @@ button {
 
 /*--SETTINGS BOX--*/
 
+.setting-but-container {
+    display:flex;
+    flex-direction:row;
+    width:20%;
+    height:auto;
+    margin:0 auto;
+    justify-content: space-evenly;
+    background-color: #361f01;
+    box-shadow: 3px 3px 50px 10px #8a5101 inset;
+    border-radius: 30%;
+    margin-top:10px;
+}
+
+.editor-icon {
+    color: #f5c98e;
+    font-size: 3vh;
+    padding:5px;
+}
+
 #settings-box {
     height:auto;
     width: 350px;
@@ -120,9 +140,9 @@ button {
     left:50%;
     transform:translate(-50%, -50%);
     z-index:1;
-    background-color:#d3d6f2;
+    background-color:#f5c98e;
     border-style:solid;
-    border-color: #7b84d1;
+    border-color: #8a5101;
     border-width:10px;
     border-radius:4%;
     display:flex;
@@ -186,8 +206,8 @@ footer {
     position:fixed;
     bottom:0;
     left:0;
-    background-color:#131a59;
-    box-shadow: 3px 3px 50px 10px #7b84d1 inset;
+    background-color:#361f01;
+    box-shadow: 3px 3px 50px 10px #8a5101 inset;
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
@@ -195,6 +215,6 @@ footer {
 }
 
 .footer-icon {
-    color: #d3d6f2;
+    color: #f5c98e;
     font-size: 5vh;
 }

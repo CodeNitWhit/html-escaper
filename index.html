@@ -23,6 +23,10 @@
                     </div>
                     <textarea id="unescaped-textarea" class="editor-textarea" data-gramm_editor="false" autocorrect="false" autocapitalize="none" autocomplete="off" spellcheck="false" wrap="off"></textarea>
                 </div>
+                <div class="setting-but-container">
+                    <button id="copy-button1" class="fas fa-copy editor-icon" onclick="copyInput(1)"></button>
+                    <button id="download-button1" class="fas fa-download editor-icon" onclick="generateDownload(1)"></button>
+                </div>
             </div>
             <div id="escaped" class="tile">
                 <h2 class="tile-title">Escaped</h2>
@@ -31,6 +35,10 @@
                         <div id="rg1" class="gutter-number">1</div>
                     </div>
                     <textarea id="escaped-textarea" class="editor-textarea" data-gramm_editor="false" autocorrect="false" autocapitalize="none" autocomplete="off" spellcheck="false" wrap="off"></textarea>
+                </div>
+                <div class="setting-but-container">
+                    <button id="copy-button2" class="fas fa-copy editor-icon" onclick="copyInput(2)"></button>
+                    <button id="download-button2" class="fas fa-download editor-icon" onclick="generateDownload(2)"></button>
                 </div>
             </div>
         </div>
@@ -61,8 +69,6 @@
     </body>
     <footer>
         <button id="settings-button" class="fas fa-cog footer-icon" onclick="toggleSettings()"></button>
-        <button id="copy-button" class="fas fa-copy footer-icon" onclick="copyInput()"></button>
-        <button id="download-button" class="fas fa-download footer-icon" onclick="generateDownload()"></button>
-        <button id="github-button" class="fab fa-github footer-icon" onclick="window.open('https://github.com/CodeNitWhit/markdown-previewer','_blank')"></button>
+        <button id="github-button" class="fab fa-github footer-icon" onclick="window.open('https://github.com/CodeNitWhit/html-escaper','_blank')"></button>
     </footer>
     </html>

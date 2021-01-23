@@ -1,6 +1,6 @@
-var fullRP = "";
+var fullRP = "&#83;&#116;&#97;&#114;&#116;&#32;&#72;&#101;&#114;&#101;&#46;&#46;&#46;";
 
-var placeholderText = $("<div/>").html(fullRP).text(); //It was easier to escape every character than the ones
+var placeholderText = fullRP;//It was easier to escape every character than the ones
 //necessary to make my placeholder text visible. And I didn't want to mess with external files. I used a
 // throwaway div to put the text into and then grab the text to place into the editor based on status of the example text setting (on by default)
 
@@ -27,13 +27,18 @@ $(document).ready(function() {
         $("#container").css("opacity", "1");
         $('#settings-button').css("box-shadow", "none");
     });
-    $(".editor-textarea").on('input', (event) => editorHandling());
+    //$("#unescaped-textarea").on("input", (event) => editorHandling(1));
+    $("#escaped-textarea").on('input', (event) => editorHandling(2));
+    $(window).resize(function() {
+        resizeEditors();
+    });
 });
 
 
 
 /*---------Used once when page first loads and on resize------------*/
 function preparePage() {
+    resizeEditors();
     populateNameField();
     $("#settings-box").hide();
     $("#copied").hide();
@@ -44,12 +49,38 @@ function preparePage() {
 }
 
 function resizeEditors() {
+    if(window.matchMedia('(orientation: landscape)').matches) {
+        resizeEditorsLandscape();
+    } else if(window.matchMedia('(orientation: portrait)').matches) {
+        resizeEditorsPortrait();
+    }
+}
 
+function resizeEditorsLandscape() {
+    let windowSize = $(window).height();
+    let titleSize = $("#title").height();
+    let footerSize = $("#title").height();
+    let editorHeight = windowSize - titleSize - footerSize - 20;
+    $(".tile").height(editorHeight);
+}
+
+function resizeEditorsPortrait() {
+    let windowSize = $(window).height();
+    let titleSize = $("#title").height();
+    let footerSize = $("#title").height();
+    let totalHeight = windowSize - titleSize - footerSize;
+    let eachHeight = (totalHeight/2) - 20;
+    $(".tile").height(eachHeight);
 }
 
 
 /*------------Editor/Previewer Functions------------------*/
-function editorHandling() {
+function editorHandling(source) {
+    if(source === 1) {
+        //escapeText();
+    } else {
+        unescapeText();
+    }
     autoGrowTextArea();
     setGutterArray();
     displayGutter();
@@ -58,10 +89,14 @@ function editorHandling() {
 function autoGrowTextArea() {
     $("#unescaped-textarea").height("5px");
     $("#escaped-textarea").height("5px");
+    $("#escaped-container").height("5px");
+    $("#unescaped-container").height("5px");
     let needed1 = $('#unescaped-textarea').prop('scrollHeight');
     let needed2 = $('#escaped-textarea').prop('scrollHeight');
     $("#unescaped-textarea").css("height", needed1);
     $("#escaped-textarea").css("height", needed2);
+    $("#escaped-container").height(needed1);
+    $("#unescaped-container").height(needed2);
 }
 
 function setGutterArray() {
@@ -118,13 +153,30 @@ function displayGutter() {
     }
 }
 
+function escapeText() {
+
+}
+
+function unescapeText() {
+    let theText = $("#escaped-textarea").val();
+    let unescapedText = $("<div/>").html(theText).text();
+    $("#unescaped-textarea").val(unescapedText);
+}
+
 /*----------------Settings/ Footer Functions----------------------*/
-/*function copyInput() {
-    $("#editor-textarea").select();
-    document.execCommand("copy");
-    $("#copied").fadeIn(700);
-    $("#copied").fadeOut(700);
-}*/
+function copyInput(source) {
+    if(source === 1) {
+        $("#unescaped-textarea").select();
+        document.execCommand("copy");
+        $("#copied").fadeIn(700);
+        $("#copied").fadeOut(700);
+    } else if(source === 2) {
+        $("#escaped-textarea").select();
+        document.execCommand("copy");
+        $("#copied").fadeIn(700);
+        $("#copied").fadeOut(700);
+    }
+}
 
 function toggleSettings() {
     $("#settings-box").show();
@@ -135,9 +187,9 @@ function toggleSettings() {
 function togglePlaceholderSetting() {
     placeholderIterator += 1;
     if (placeholderIterator % 2 ==0) {
-        $("#editor-textarea").val(placeholderText);
+        $("#escaped-textarea").val(placeholderText);
     } else {
-        $("#editor-textarea").val("Start Here...");
+        $("#escaped-textarea").val("");
     }
     editorHandling();
 }
@@ -146,17 +198,14 @@ function populateNameField() {
     $("#name-textarea").val(downloadName);
 }
 
-/*function generateDownload() {
-    let text = $("#editor-textarea").val();
-    populateNameField();
-    let nameGood = avoidRepeatDownName(downloadName);
-    let tempName;
-    if(!nameGood) {
-        tempName = tweakName(downloadName);
-    } else {
-        tempName = downloadName
+function generateDownload(source) {
+    let text;
+    if(source === 1) {
+        text = $("#unescaped-textarea").val();
+    } else if(source === 2) {
+        text = $("#escaped-textarea").val();
     }
-    let fileName = tempName + ".md";
+    let fileName = tweakName(source);
     //Use link element (hidden) to set the download attribute
     $("#download-link").attr("href", "data:text/plain;charset-utf-8," + encodeURIComponent(text));
     $("#download-link").attr("download", fileName);
@@ -171,10 +220,22 @@ function clearDownloadAttributes() {
     $("#download-link").attr("download", "fileName");
 }
 
-function tweakName() {
-    let tempName = downloadName + downloadIterator;
+function tweakName(source) {
+    populateNameField();
+    let nameGood = avoidRepeatDownName(downloadName);
+    let tempName;
+    if(!nameGood) {
+        tempName = downloadName + downloadIterator;
+    } else {
+        tempName = downloadName
+    }
+    if(source === 1) {
+        tempName = tempName + "_unescaped" + ".txt";
+    } else if(source===2) {
+        tempName = tempName + "_escaped" + ".txt";
+    }
     return tempName;
-}*/
+}
 
 function saveNewName() {
     let inputText = $("#name-textarea").val();
