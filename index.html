@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div id="escaped" class="tile">
-                <h2 class="tile-title">Escaped &#40;paste/copy/delete&#41;</h2>
+                <h2 class="tile-title">Escaped &#40;view only&#41;</h2>
                 <div id="escaped-container" class="editor-container">
                     <div id="gutter2" class="gutter">
                         <div id="rg1" class="gutter-number">1</div>
@@ -50,7 +50,7 @@
                 <label for="name-textarea">
                     Name:
                     <input type="text" id="name-textarea" data-gramm_editor="false" autocorrect="false" autocapitalize="none" autocomplete="off" spellcheck="false" wrap="off"></input>
-                    .md
+                    .txt
                 </label>
                 <br>
                 <input type="button" value="Save" onclick="saveNewName()">
@@ -60,10 +60,12 @@
                     Example Text:
                     <input type="checkbox" id="placeholder-setting" name="placeholder-setting" onclick="togglePlaceholderSetting()" checked >
                 </label>
+                <label for="entName-setting">
             </form>
         </div>
         <div id="copied" class="popup">Copied to Clipboard!</div>
         <div id="saved" class="popup">New Filename Saved!</div>
+        <div id="setting-saved" class="popup">Settings Saved!</div>
         <div id="downloaded" class="popup">File Saved to Downloads!</div>
         <a id="download-link">You shouldn't be seeing this...</a>
     </body>
