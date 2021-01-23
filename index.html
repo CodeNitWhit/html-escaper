@@ -60,7 +60,24 @@
                     Example Text:
                     <input type="checkbox" id="placeholder-setting" name="placeholder-setting" onclick="togglePlaceholderSetting()" checked >
                 </label>
+                <br>
+                <br>
                 <label for="entName-setting">
+                    Use entity names:
+                    <input type="radio" id="entities-yes" class="entities" name="entName-setting" onclick="toggleNames()" value="Yes">
+                    <label for="entities-yes">Yes</label>
+                    <input type="radio" id="entities-no" class="entities" name="entName-setting" onclick="toggleNames()" value="No">
+                    <label for="entities-no">No</label>
+                </label>
+                <br>
+                <br>
+                <label for="allchar-setting">
+                    Only convert HTML characters:
+                    <input type="radio" id="allchar-no" name="allchar-setting" value="Yes" onclick="">
+                    <label for="allchar-no">Yes</label>
+                    <input type="radio" id="allchar-yes" name="allchar-setting" value="No" onclick="">
+                    <label for="allchar-yes">No</label>
+                </label>
             </form>
         </div>
         <div id="copied" class="popup">Copied to Clipboard!</div>
