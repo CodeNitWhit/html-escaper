@@ -220,14 +220,19 @@ function unescapeText() {
 
 /*----------------Settings/ Footer Functions----------------------*/
 function copyInput(source) {
+
     if(source === 1) {
+        $("#unescaped-textarea").prop("disabled", false);
         $("#unescaped-textarea").select();
         document.execCommand("copy");
+        $("#unescaped-textarea").prop("disabled", true);
         $("#copied").fadeIn(700);
         $("#copied").fadeOut(700);
     } else if(source === 2) {
+        $("#escaped-textarea").prop("disabled", false);
         $("#escaped-textarea").select();
         document.execCommand("copy");
+        $("#escaped-textarea").prop("disabled", true);
         $("#copied").fadeIn(700);
         $("#copied").fadeOut(700);
     }
@@ -237,6 +242,7 @@ function toggleEscaping() {
         escaping = false;
         $("#switchon-button").hide();
         $("#switchoff-button").show();
+        $("#hidable").hide();
         $("#title").html("HTML Un-Escaper");
         $("#un-title").html("Un-Escaped (view only)");
         $("#esc-title").html("Escaped");
@@ -246,6 +252,7 @@ function toggleEscaping() {
         escaping = true;
         $("#switchoff-button").hide();
         $("#switchon-button").show();
+        $("#hidable").show();
         $("#title").html("HTML Escaper");
         $("#un-title").html("Un-Escaped");
         $("#esc-title").html("Escaped (view only)");
