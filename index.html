@@ -21,9 +21,9 @@
                     <div id="gutter1" class="gutter">
                         <div id="lg1" class="gutter-number">1</div>
                     </div>
-                    <textarea id="unescaped-textarea" class="editor-textarea" data-gramm_editor="false" autocorrect="false" autocapitalize="none" autocomplete="off" spellcheck="false" wrap="off"></textarea>
+                    <textarea id="unescaped-textarea" class="editor-textarea" data-gramm_editor="false" autocorrect="false" autocapitalize="none" autocomplete="off" spellcheck="false" wrap="soft"></textarea>
                 </div>
-                <div class="setting-but-container">
+                <div id="sbc1" class="setting-but-container">
                     <button id="copy-button1" class="fas fa-copy editor-icon" onclick="copyInput(1)"></button>
                     <button id="download-button1" class="fas fa-download editor-icon" onclick="generateDownload(1)"></button>
                 </div>
@@ -34,9 +34,9 @@
                     <div id="gutter2" class="gutter">
                         <div id="rg1" class="gutter-number">1</div>
                     </div>
-                    <textarea id="escaped-textarea" class="editor-textarea" data-gramm_editor="false" autocorrect="false" autocapitalize="none" autocomplete="off" spellcheck="false" wrap="off"></textarea>
+                    <textarea id="escaped-textarea" class="editor-textarea" data-gramm_editor="false" autocorrect="false" autocapitalize="none" autocomplete="off" spellcheck="false" wrap="soft"></textarea>
                 </div>
-                <div class="setting-but-container">
+                <div id="sbc2" class="setting-but-container">
                     <button id="copy-button2" class="fas fa-copy editor-icon" onclick="copyInput(2)"></button>
                     <button id="download-button2" class="fas fa-download editor-icon" onclick="generateDownload(2)"></button>
                 </div>
@@ -72,7 +72,7 @@
                 <br>
                 <br>
                 <label for="allchar-setting">
-                    Only convert HTML characters:
+                    Only convert HTML text:
                     <input type="radio" id="allchar-no" name="allchar-setting" value="Yes" onclick="">
                     <label for="allchar-no">Yes</label>
                     <input type="radio" id="allchar-yes" name="allchar-setting" value="No" onclick="">

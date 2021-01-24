@@ -118,11 +118,15 @@ button {
     flex-direction:row;
     width:20%;
     height:auto;
-    margin:0 auto;
     justify-content: space-evenly;
     background-color: #361f01;
     box-shadow: 3px 3px 50px 10px #8a5101 inset;
     border-radius: 30%;
+}
+#sbc1 {
+    margin-top:10px;
+}
+#sbc2 {
     margin-top:10px;
 }
 
