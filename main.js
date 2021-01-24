@@ -46,6 +46,9 @@ $(document).ready(function() {
     $(window).resize(function() {
         resizeEditors();
     });
+    $(window).on('resize orientationchange', function(){
+        resizeEditors();
+    });
 });
 
 
