@@ -47,6 +47,7 @@ $(document).ready(function() {
     if(isMobile) {
         $(window).on("orientationchange", function(){
             setTimeout(resizeEditors(), 500);
+            document.body.style.zoom = "100%";
         });
     } else {
         $(window).on("resize", function(){
