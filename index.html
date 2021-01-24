@@ -65,20 +65,33 @@
                 <div id="hidable">
                     <label for="entName-setting" class="hideable-setting">
                         Use entity names:
-                        <input type="radio" id="entities-yes" class="entities" name="entName-setting" onclick="toggleNames()" value="Yes">
+                        <input type="radio" id="entities-yes" class="entities" name="entName-setting" value="Yes" onclick="toggleNames()">
                         <label for="entities-yes">Yes</label>
-                        <input type="radio" id="entities-no" class="entities" name="entName-setting" onclick="toggleNames()" value="No">
+                        <input type="radio" id="entities-no" class="entities" name="entName-setting" value="No" onclick="toggleNames()">
                         <label for="entities-no">No</label>
                     </label>
                     <br>
                     <br>
                     <label for="allchar-setting" class="hideable-setting">
-                        Only convert HTML text:
-                        <input type="radio" id="allchar-no" name="allchar-setting" value="Yes" onclick="">
+                        Convert troublesome chars:
+                        <input type="radio" id="allchar-no" name="allchar-setting" value="Yes" onclick="toggleAllChars(1)">
                         <label for="allchar-no">Yes</label>
-                        <input type="radio" id="allchar-yes" name="allchar-setting" value="No" onclick="">
+                        <input type="radio" id="allchar-yes" name="allchar-setting" value="No" onclick="toggleAllChars(2)">
                         <label for="allchar-yes">No</label>
                     </label>
+                    <br>
+                    <br>
+                    <div id="hideable2">
+                        <label for="allchar-setting" class="hideable-setting">
+                            Text Wrapping Character:
+                            <input type="radio" id="wrapper1" name="text-wrapping" value="&#34;" onclick="toggleTextWrapper(1, true)">
+                            <label for="wrapper1">"</label>
+                            <input type="radio" id="wrapper2" name="text-wrapping" value="&#39;" onclick="toggleTextWrapper(2, true)">
+                            <label for="wrapper2">'</label>
+                            <input type="radio" id="wrapper-none" name="text-wrapping" value="None" onclick="toggleTextWrapper(0, false)">
+                            <label for="wrapper-none">None</label>
+                        </label>
+                    </div>
                 </div>
             </form>
         </div>

@@ -2,7 +2,8 @@ var escapeDictionary = {
     "numerical":["&#32;","&#33;","&#34;","&#35;","&#36;","&#37;","&#38;","&#39;","&#40;","&#41;","&#42;","&#43;","&#44;","&#45;","&#46;","&#47;","&#48;","&#49;","&#50;","&#51;","&#52;","&#53;","&#54;","&#55;","&#56;","&#57;","&#58;","&#59;","&#60;","&#61;","&#62;","&#63;","&#64;","&#65;","&#66;","&#67;","&#68;","&#69;","&#70;","&#71;","&#72;","&#73;","&#74;","&#75;","&#76;","&#77;","&#78;","&#79;","&#80;","&#81;","&#82;","&#83;","&#84;","&#85;","&#86;","&#87;","&#88;","&#89;","&#90;","&#91;","&#92;","&#93;","&#94;","&#95;","&#96;","&#97;","&#98;","&#99;","&#100;","&#101;","&#102;","&#103;","&#104;","&#105;","&#106;","&#107;","&#108;","&#109;","&#110;","&#111;","&#112;","&#113;","&#114;","&#115;","&#116;","&#117;","&#118;","&#119;","&#120;","&#121;","&#122;","&#123;","&#124;","&#125;","&#126;","&#192;","&#193;","&#194;","&#195;","&#196;","&#197;","&#198;","&#199;","&#200;","&#201;","&#202;","&#203;","&#204;","&#205;","&#206;","&#207;","&#208;","&#209;","&#210;","&#211;","&#212;","&#213;","&#214;","&#216;","&#217;","&#218;","&#219;","&#220;","&#221;","&#222;","&#223;","&#224;","&#225;","&#226;","&#227;","&#228;","&#229;","&#230;","&#231;","&#232;","&#233;","&#234;","&#235;","&#236;","&#237;","&#238;","&#239;","&#240;","&#241;","&#242;","&#243;","&#244;","&#245;","&#246;","&#248;","&#249;","&#250;","&#251;","&#252;","&#253;","&#254;","&#255;","&#160;","&#161;","&#162;","&#163;","&#164;","&#165;","&#166;","&#167;","&#168;","&#169;","&#170;","&#171;","&#172;","&#173;","&#174;","&#175;","&#176;","&#177;","&#178;","&#179;","&#180;","&#181;","&#182;","&#184;","&#185;","&#186;","&#187;","&#188;","&#189;","&#190;","&#191;","&#215;","&#247;","&#8704;","&#8706;","&#8707;","&#8709;","&#8711;","&#8712;","&#8713;","&#8715;","&#8719;","&#8721;","&#8722;","&#8727;","&#8730;","&#8733;","&#8734;","&#8736;","&#8743;","&#8744;","&#8745;","&#8746;","&#8747;","&#8756;","&#8764;","&#8773;","&#8776;","&#8800;","&#8801;","&#8804;","&#8805;","&#8834;","&#8835;","&#8836;","&#8838;","&#8839;","&#8853;","&#8855;","&#8869;","&#8901;","&#913;","&#914;","&#915;","&#916;","&#917;","&#918;","&#919;","&#920;","&#921;","&#922;","&#923;","&#924;","&#925;","&#926;","&#927;","&#928;","&#929;","&#931;","&#932;","&#933;","&#934;","&#935;","&#936;","&#937;","&#945;","&#946;","&#947;","&#948;","&#949;","&#950;","&#951;","&#952;","&#953;","&#954;","&#955;","&#956;","&#957;","&#958;","&#959;","&#960;","&#961;","&#962;","&#963;","&#964;","&#965;","&#966;","&#967;","&#968;","&#969;","&#977;","&#978;","&#982;","&#338;","&#339;","&#352;","&#353;","&#376;","&#402;","&#710;","&#732;","&#8194;","&#8195;","&#8201;","&#8204;","&#8205;","&#8206;","&#8207;","&#8211;","&#8212;","&#8216;","&#8217;","&#8218;","&#8220;","&#8221;","&#8222;","&#8224;","&#8225;","&#8226;","&#8230;","&#8240;","&#8242;","&#8243;","&#8249;","&#8250;","&#8254;","&#8364;","&#8482;","&#8592;","&#8593;","&#8594;","&#8595;","&#8596;","&#8629;","&#8968;","&#8969;","&#8970;","&#8971;","&#9674;","&#9824;","&#9827;","&#9829;","&#9830;"],
     "chars":[" ","!","\"","#","$","%","&","\'","(",")","*","+","","-",".","/","0","1","2","3","4","5","6","7","8","9",":",";","<","=",">","?","@","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","[","\\","]","^","_","`","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","{","|","}","~","À","Á","Â","Ã","Ä","Å","Æ","Ç","È","É","Ê","Ë","Ì","Í","Î","Ï","Ð","Ñ","Ò","Ó","Ô","Õ","Ö","Ø","Ù","Ú","Û","Ü","Ý","Þ","ß","à","á","â","ã","ä","å","æ","ç","è","é","ê","ë","ì","í","î","ï","ð","ñ","ò","ó","ô","õ","ö","ø","ù","ú","û","ü","ý","þ","ÿ","","¡","¢","£","¤","¥","¦","§","¨","©","ª","«","¬","­","®","¯","°","±","²","³","´","µ","¶","¸","¹","º","»","¼","½","¾","¿","×","÷","∀","∂","∃","∅","∇","∈","∉","∋","∏","∑","−","∗","√","∝","∞","∠","∧","∨","∩","∪","∫","∴","∼","≅","≈","≠","≡","≤","≥","⊂","⊃","⊄","⊆","⊇","⊕","⊗","⊥","⋅","Α","Β","Γ","Δ","Ε","Ζ","Η","Θ","Ι","Κ","Λ","Μ","Ν","Ξ","Ο","Π","Ρ","Σ","Τ","Υ","Φ","Χ","Ψ","Ω","α","β","γ","δ","ε","ζ","η","θ","ι","κ","λ","μ","ν","ξ","ο","π","ρ","ς","σ","τ","υ","φ","χ","ψ","ω","ϑ","ϒ","ϖ","Œ","œ","Š","š","Ÿ","ƒ","ˆ","˜","","","","‌","‍","‎","‏","–","—","‘","’","‚","“","”","„","†","‡","•","…","‰","′","″","‹","›","‾","€","™","←","↑","→","↓","↔","↵","⌈","⌉","⌊","⌋","◊","♠","♣","♥","♦"],
     "charsNamed":["&","<",">","À","Á","Â","Ã","Ä","Å","Æ","Ç","È","É","Ê","Ë","Ì","Í","Î","Ï","Ð","Ñ","Ò","Ó","Ô","Õ","Ö","Ø","Ù","Ú","Û","Ü","Ý","Þ","ß","à","á","â","ã","ä","å","æ","ç","è","é","ê","ë","ì","í","î","ï","ð","ñ","ò","ó","ô","õ","ö","ø","ù","ú","û","ü","ý","þ","ÿ","","¡","¢","£","¤","¥","¦","§","¨","©","ª","«","¬","­","®","¯","°","±","²","³","´","µ","¶","¸","¹","º","»","¼","½","¾","¿","×","÷","∀","∂","∃","∅","∇","∈","∉","∋","∏","∑","−","∗","√","∝","∞","∠","∧","∨","∩","∪","∫","∴","∼","≅","≈","≠","≡","≤","≥","⊂","⊃","⊄","⊆","⊇","⊕","⊗","⊥","⋅","Α","Β","Γ","Δ","Ε","Ζ","Η","Θ","Ι","Κ","Λ","Μ","Ν","Ξ","Ο","Π","Ρ","Σ","Τ","Υ","Φ","Χ","Ψ","Ω","α","β","γ","δ","ε","ζ","η","θ","ι","κ","λ","μ","ν","ξ","ο","π","ρ","ς","σ","τ","υ","φ","χ","ψ","ω","ϑ","ϒ","ϖ","Œ","œ","Š","š","Ÿ","ƒ","ˆ","˜","","","","‌","‍","‎","‏","–","—","‘","’","‚","“","”","„","†","‡","•","…","‰","′","″","‹","›","‾","€","™","←","↑","→","↓","↔","↵","⌈","⌉","⌊","⌋","◊","♠","♣","♥","♦"],
-    "trouble":["&","<",">","\""]
+    "named":["&amp;","&lt;","&gt;","&Agrave;","&Aacute;","&Acirc;","&Atilde;","&Auml;","&Aring;","&AElig;","&Ccedil;","&Egrave;","&Eacute;","&Ecirc;","&Euml;","&Igrave;","&Iacute;","&Icirc;","&Iuml;","&ETH;","&Ntilde;","&Ograve;","&Oacute;","&Ocirc;","&Otilde;","&Ouml;","&Oslash;","&Ugrave;","&Uacute;","&Ucirc;","&Uuml;","&Yacute;","&THORN;","&szlig;","&agrave;","&aacute;","&acirc;","&atilde;","&auml;","&aring;","&aelig;","&ccedil;","&egrave;","&eacute;","&ecirc;","&euml;","&igrave;","&iacute;","&icirc;","&iuml;","&eth;","&ntilde;","&ograve;","&oacute;","&ocirc;","&otilde;","&ouml;","&oslash;","&ugrave;","&uacute;","&ucirc;","&uuml;","&yacute;","&thorn;","&yuml;","&nbsp;","&iexcl;","&cent;","&pound;","&curren;","&yen;","&brvbar;","&sect;","&uml;","&copy;","&ordf;","&laquo;","&not;","&shy;","&reg;","&macr;","&deg;","&plusmn;","&sup2;","&sup3;","&acute;","&micro;","&para;","&cedil;","&sup1;","&ordm;","&raquo;","&frac14;","&frac12;","&frac34;","&iquest;","&times;","&divide;","&forall;","&part;","&exist;","&empty;","&nabla;","&isin;","&notin;","&ni;","&prod;","&sum;","&minus;","&lowast;","&radic;","&prop;","&infin;","&ang;","&and;","&or;","&cap;","&cup;","&int;","&there4;","&sim;","&cong;","&asymp;","&ne;","&equiv;","&le;","&ge;","&sub;","&sup;","&nsub;","&sube;","&supe;","&oplus;","&otimes;","&perp;","&sdot;","&Alpha;","&Beta;","&Gamma;","&Delta;","&Epsilon;","&Zeta;","&Eta;","&Theta;","&Iota;","&Kappa;","&Lambda;","&Mu;","&Nu;","&Xi;","&Omicron;","&Pi;","&Rho;","&Sigma;","&Tau;","&Upsilon;","&Phi;","&Chi;","&Psi;","&Omega;","&alpha;","&beta;","&gamma;","&delta;","&epsilon;","&zeta;","&eta;","&theta;","&iota;","&kappa;","&lambda;","&mu;","&nu;","&xi;","&omicron;","&pi;","&rho;","&sigmaf;","&sigma;","&tau;","&upsilon;","&phi;","&chi;","&psi;","&omega;","&thetasym;","&upsih;","&piv;","&OElig;","&oelig;","&Scaron;","&scaron;","&Yuml;","&fnof;","&circ;","&tilde;","&ensp;","&emsp;","&thinsp;","&zwnj;","&zwj;","&lrm;","&rlm;","&ndash;","&mdash;","&lsquo;","&rsquo;","&sbquo;","&ldquo;","&rdquo;","&bdquo;","&dagger;","&Dagger;","&bull;","&hellip;","&permil;","&prime;","&Prime;","&lsaquo;","&rsaquo;","&oline;","&euro;","&trade;","&larr;","&uarr;","&rarr;","&darr;","&harr;","&crarr;","&lceil;","&rceil;","&lfloor;","&rfloor;","&loz;","&spades;","&clubs;","&hearts;","&diams;"],
+    "trouble":["&","<",">"]
 };
 var fullRP = "&#83;&#116;&#97;&#114;&#116;&#32;&#72;&#101;&#114;&#101;&#46;&#46;&#46;";
 var placeholderText = fullRP;//It was easier to escape every character than the ones
@@ -21,18 +22,39 @@ var allChars = true;
 var troubleRunKeys;
 var escaping = false;
 
+
+
+/*---------------When Ready/ Event Listeners--------------------------*/
 $(document).ready(function() {
     preparePage();
     $("#exit-btn").click(function() {
         $("#settings-box").hide();
         $("#container").css("opacity", "1");
         $('#settings-button').css("box-shadow", "none");
+        editorHandling();
     });
-    $("#unescaped-textarea").on("input", (event) => editorHandling());
+    $("#unescaped-textarea").on("input", function(event)  {
+        if(escaping) {
+            editorHandling();
+        }
+    });
+    $("#escaped-textarea").on("input", function(event)  {
+        if(!escaping) {
+            editorHandling();
+        }
+    });
     $(window).resize(function() {
         resizeEditors();
     });
 });
+
+
+
+
+
+
+
+
 
 
 
@@ -41,9 +63,10 @@ function preparePage() {
     $("#escaped-textarea").attr("disabled", "disabled");
     resizeEditors();
     populateNameField();
-    $("#settings-box,#copied,#saved,#setting-saved,#downloaded,#switchoff-button").hide();
+    $("#entities-no").attr("checked", "true");
+    $("#allchar-yes").attr("checked", "true");
+    $("#settings-box,#copied,#saved,#setting-saved,#downloaded,#switchoff-button,#sbc1,#hideable2").hide();
     $("#escaped-textarea").val(placeholderText);
-    $("#entities-no,#allchar-yes").attr("checked", "true");
     editorHandling();
     escaping = true;
 }
@@ -66,6 +89,17 @@ function resizeEditorsPortrait() {
     let eachHeight = (totalHeight/2) - 20;
     $(".tile").height(eachHeight);
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*------------Editor/Previewer Functions------------------*/
@@ -115,8 +149,7 @@ function displayGutter() {
     let content1;
     let content2;
     let p3 = "</div>";
-    let appendString
-    /*Unescaped Gutter*/
+    let appendString;
     if(currentGutter1.length > 1) {
         for(let i = 0; i < currentGutter1.length; i++) {
             content1 = i+1;
@@ -142,59 +175,72 @@ function displayGutter() {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------Escaping Functionality--------*/
 function escapeText() {
     let escapedString;
     let stringArr = $("#unescaped-textarea").val().split("");
     let toSwitch;
+    let troubleRunKeys;
     if(!allChars) {
-        /*toSwitch = extractTroubleChars(stringArr);
-        troubleRunKeys = {
-            //--------------------------------
-        };*/
+        toSwitch = extractTroubleChars(stringArr);
+        troubleRunKeys = createTroubleKey(toSwitch, stringArr);
     } else {
         toSwitch = stringArr;
     }
-    if(useNames) {
-        /*for(let i = 0; i < toSwitch.length; i++) {
-            toSwitch = swapWithNames(toSwitch, i);
-        }*/
+    if(toSwitch.length > 0) {
+        if(useNames) {
+            for(let i = 0; i < toSwitch.length; i++) {
+                toSwitch[i] = swapWithNames(toSwitch[i]);
+            }
+        }
+        for(let i = 0; i < toSwitch.length; i++) {
+            toSwitch[i] = swapNumerically(toSwitch[i]);
+        }
+        if(!allChars) {
+            stringArr = reintegrateTroubleChars(toSwitch, stringArr, troubleRunKeys);
+            escapedString = stringArr.join("");
+        } else {
+            escapedString = toSwitch.join("");
+        }
+    } else {
+        escapedString = stringArr.join("");
     }
-    for(let i = 0; i < toSwitch.length; i++) {
-        toSwitch = swapNumerically(toSwitch, i);
-    }
-    if(!allChars) {
-        //Swap out toswitch and object mathes -> escape value
-
-    }
-    escapedString = toSwitch.join("");
     $("#escaped-textarea").val(escapedString);
 }
 
-function swapNumerically(arr, i) {
-    if(arr[i].length === 1) {
-        //alert("length good");
-        let rawChar = arr[i];
-        //alert(rawChar);
-        //alert(escapeDictionary["chars"].length + " " + escapeDictionary["numerical"].length);
-        let escapeCharIndex = escapeDictionary["chars"].includes(rawChar) ? escapeDictionary["chars"].indexOf(rawChar) : -1;
-        if(escapeCharIndex !== -1) {
-            let escapeChar = escapeDictionary["numerical"][escapeCharIndex];
-            arr[i] = escapeChar;
+function swapNumerically(char) {
+    let escapeChar = char;;
+    if(char.length === 1) {
+        let escapeCharIndex = escapeDictionary["chars"].includes(char) ? escapeDictionary["chars"].indexOf(char) : 400;
+        if(escapeCharIndex !== 400) {
+            escapeChar = escapeDictionary["numerical"][escapeCharIndex];
         }
     }
-    return arr;
+    return escapeChar;
 }
 
-function swapWithNames(arr, i) {
-    if(arr[i].length === 1) {
-        let rawChar = stringArr[i];
-        let escapeCharIndex = escapeDictionary["charsNamed"].includes(rawChar) ? escapeDictionary["charsNamed"].indexOf(rawChar) : -1;
-        if(escapeCharIndex !== -1) {
-            let escapeChar = escapeDictionary["named"][escapeCharIndex];
-            arr[i] = escapeChar;
+function swapWithNames(char) {
+    let escapeChar = char;
+    if(char.length === 1) {
+        let escapeCharIndex = escapeDictionary["charsNamed"].includes(char) ? escapeDictionary["charsNamed"].indexOf(char) : 400;
+        if(escapeCharIndex !== 400) {
+            escapeChar = escapeDictionary["named"][escapeCharIndex];
         }
     }
-    return arr;
+    return escapeChar;
 }
 
 function extractTroubleChars(arr) {
@@ -210,7 +256,31 @@ function extractTroubleChars(arr) {
     }
     return keepArr;
 }
-/**/
+
+function createTroubleKey(troubleArr, originalArr) {
+    let currentIndex;
+    let currentChar;
+    var currentOrigIndex = 0;
+    let troubleRunKeys = {
+        "indexes":[]
+    };
+    for(let i = 0; i < troubleArr.length; i++) {
+        currentChar = troubleArr[i];
+        currentIndex = originalArr.indexOf(currentChar, currentOrigIndex + 1);
+        troubleRunKeys["indexes"].push(currentIndex);
+        currentOrigIndex = currentIndex;
+    }
+    return troubleRunKeys;
+}
+
+function reintegrateTroubleChars(switchedTroubles, originalArr, troubleKey) {
+    let originalI;
+    for(let i = 0; i < switchedTroubles.length; i++) {
+        originalI = troubleKey["indexes"][i];
+        originalArr[originalI] = switchedTroubles[i];
+    }
+    return originalArr;
+}
 
 function unescapeText() {
     let theText = $("#escaped-textarea").val();
@@ -218,31 +288,26 @@ function unescapeText() {
     $("#unescaped-textarea").val(unescapedText);
 }
 
-/*----------------Settings/ Footer Functions----------------------*/
-function copyInput(source) {
 
-    if(source === 1) {
-        $("#unescaped-textarea").prop("disabled", false);
-        $("#unescaped-textarea").select();
-        document.execCommand("copy");
-        $("#unescaped-textarea").prop("disabled", true);
-        $("#copied").fadeIn(700);
-        $("#copied").fadeOut(700);
-    } else if(source === 2) {
-        $("#escaped-textarea").prop("disabled", false);
-        $("#escaped-textarea").select();
-        document.execCommand("copy");
-        $("#escaped-textarea").prop("disabled", true);
-        $("#copied").fadeIn(700);
-        $("#copied").fadeOut(700);
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------Settings/ Footer Functions----------------------*/
 function toggleEscaping() {
     if(escaping) {
         escaping = false;
-        $("#switchon-button").hide();
-        $("#switchoff-button").show();
-        $("#hidable").hide();
+        $("#switchon-button,#hidable,#sbc2").hide();
+        $("#switchoff-button,#sbc1").show();
         $("#title").html("HTML Un-Escaper");
         $("#un-title").html("Un-Escaped (view only)");
         $("#esc-title").html("Escaped");
@@ -250,14 +315,56 @@ function toggleEscaping() {
         $("#escaped-textarea").prop("disabled", false);
     } else {
         escaping = true;
-        $("#switchoff-button").hide();
-        $("#switchon-button").show();
-        $("#hidable").show();
+        $("#switchoff-button,#sbc1").hide();
+        $("#switchon-button,#hidable,#sbc2").show();
         $("#title").html("HTML Escaper");
         $("#un-title").html("Un-Escaped");
         $("#esc-title").html("Escaped (view only)");
         $("#escaped-textarea").prop("disabled", true);
         $("#unescaped-textarea").prop("disabled", false);
+    }
+    editorHandling();
+}
+
+function toggleNames() {
+    if(useNames) {
+        useNames =false;
+    } else if(!useNames) {
+        useNames = true;
+    }
+    triggerPopup("#setting-saved");
+}
+
+function toggleAllChars(source) {
+    if(source === 1) {
+        allChars =false;
+        $("#hideable2").show();
+        $("#wrapper-none").attr("checked", "true");
+        toggleTextWrapper(0, false);
+    } else if(source === 2) {
+        allChars = true;
+        $("#hideable2").hide();
+    }
+    triggerPopup("#setting-saved");
+}
+
+function toggleTextWrapper(source, popup) {
+    let indexOf;
+    if(escapeDictionary["trouble"].includes("\"")) {
+        indexOf = escapeDictionary["trouble"].indexOf("\"");
+        escapeDictionary["trouble"].splice(indexOf);
+    }
+    if(escapeDictionary["trouble"].includes("\'")) {
+        indexOf = escapeDictionary["trouble"].indexOf("\'");
+        escapeDictionary["trouble"].splice(indexOf);
+    }
+    if(source === 1) {
+        escapeDictionary["trouble"].push("\"");
+    } else if(source === 2) {
+        escapeDictionary["trouble"].push("\'");
+    }
+    if(popup === true) {
+        triggerPopup("#setting-saved");
     }
 }
 
@@ -274,11 +381,27 @@ function togglePlaceholderSetting() {
     } else {
         $("#escaped-textarea").val("");
     }
+    escaping = false;
     editorHandling();
+    escaping = true;
+    triggerPopup("#setting-saved");
 }
 
-function populateNameField() {
-    $("#name-textarea").val(downloadName);
+function copyInput(source) {
+
+    if(source === 1) {
+        $("#unescaped-textarea").prop("disabled", false);
+        $("#unescaped-textarea").select();
+        document.execCommand("copy");
+        $("#unescaped-textarea").prop("disabled", true);
+        triggerPopup("#copied");
+    } else if(source === 2) {
+        $("#escaped-textarea").prop("disabled", false);
+        $("#escaped-textarea").select();
+        document.execCommand("copy");
+        $("#escaped-textarea").prop("disabled", true);
+        triggerPopup("#copied");
+    }
 }
 
 function generateDownload(source) {
@@ -292,14 +415,9 @@ function generateDownload(source) {
     $("#download-link").attr("href", "data:text/plain;charset-utf-8," + encodeURIComponent(text));
     $("#download-link").attr("download", fileName);
     $("#download-link")[0].click();
-    triggerDownloadedPopup();
+    triggerPopup("#downloaded");
     clearDownloadAttributes();
     downloadIterator++;
-}
-
-function clearDownloadAttributes() {
-    $("#download-link").attr("href", "");
-    $("#download-link").attr("download", "fileName");
 }
 
 function tweakName(source) {
@@ -325,20 +443,19 @@ function saveNewName() {
     if(nameGood) {
         downloadName = inputText;
         populateNameField();
-        triggerSavedPopup();
+        triggerPopup("#saved");
     } else {
         populateNameField();
     }
 }
 
-function triggerSavedPopup() {
-    $("#saved").fadeIn(700);
-    $("#saved").fadeOut(700);
+function populateNameField() {
+    $("#name-textarea").val(downloadName);
 }
 
-function triggerDownloadedPopup() {
-    $("#downloaded").fadeIn(700);
-    $("#downloaded").fadeOut(700);
+function clearDownloadAttributes() {
+    $("#download-link").attr("href", "");
+    $("#download-link").attr("download", "fileName");
 }
 
 function validateName(name) {
@@ -379,12 +496,7 @@ function avoidRepeatDownName(name) {
     }
 }
 
-function toggleNames() {
-    if(useNames) {
-        useNames =false;
-    } else if(!useNames) {
-        useNames = true;
-    }
-    $("#setting-saved").fadeIn(700);
-    $("#setting-saved").fadeOut(700);
+function triggerPopup(whatTo) {
+    $(whatTo).fadeIn(700);
+    $(whatTo).fadeOut(700);
 }
