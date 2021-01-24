@@ -45,7 +45,6 @@ button {
     }
     .tile {
         width: 47vw;
-        height:75vh;
     }
 }
 
@@ -56,7 +55,6 @@ button {
     }
     .tile {
         width: 90vw;
-        height:38vh;
         margin:0 auto;
         margin-bottom: 10px;
     }
