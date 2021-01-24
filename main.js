@@ -43,8 +43,8 @@ $(document).ready(function() {
             editorHandling();
         }
     });
-    $(window).on('resize orientationchange', function(){
-        setTimeout(resizeEditors, 500);
+    $(window).on("orientationchange", function(){
+        setTimeout(resizeEditors(), 500);
     });
 });
 
