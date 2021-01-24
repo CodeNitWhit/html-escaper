@@ -19,7 +19,7 @@ var downloadName = "download"; //this is what the user can change
 var useNames = false;
 var allChars = true;
 var troubleRunKeys;
-var escaping = true;
+var escaping = false;
 
 $(document).ready(function() {
     preparePage();
@@ -28,7 +28,7 @@ $(document).ready(function() {
         $("#container").css("opacity", "1");
         $('#settings-button').css("box-shadow", "none");
     });
-    $("#unescaped-textarea").on("input", (event) => editorHandling(1));
+    $("#unescaped-textarea").on("input", (event) => editorHandling());
     $(window).resize(function() {
         resizeEditors();
     });
@@ -44,7 +44,8 @@ function preparePage() {
     $("#settings-box,#copied,#saved,#setting-saved,#downloaded,#switchoff-button").hide();
     $("#escaped-textarea").val(placeholderText);
     $("#entities-no,#allchar-yes").attr("checked", "true");
-    editorHandling(2);
+    editorHandling();
+    escaping = true;
 }
 
 function resizeEditors() {
@@ -68,8 +69,8 @@ function resizeEditorsPortrait() {
 
 
 /*------------Editor/Previewer Functions------------------*/
-function editorHandling(source) {
-    if(source === 1) {
+function editorHandling() {
+    if(escaping) {
         escapeText();
         //createEscapeList();
     } else {
