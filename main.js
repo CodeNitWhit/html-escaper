@@ -21,6 +21,7 @@ var useNames = false;
 var allChars = true;
 var troubleRunKeys;
 var escaping = false;
+var isMobile = false;
 
 
 
@@ -43,15 +44,25 @@ $(document).ready(function() {
             editorHandling();
         }
     });
-    $(window).on("orientationchange", function(){
-        setTimeout(resizeEditors(), 500);
-    });
+    if(isMobile) {
+        $(window).on("orientationchange", function(){
+            setTimeout(resizeEditors(), 500);
+        });
+    } else {
+        $(window).on("resize", function(){
+            setTimeout(resizeEditors(), 500);
+        });
+    }
 });
 
 
 
 
-
+function setMobileBool() {
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+        isMobile = true;
+    }
+}
 
 
 
@@ -60,6 +71,7 @@ $(document).ready(function() {
 
 /*---------Used once when page first loads and on resize------------*/
 function preparePage() {
+    setMobileBool();
     $("#escaped-textarea").attr("disabled", "disabled");
     resizeEditors();
     populateNameField();
