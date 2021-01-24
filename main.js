@@ -77,6 +77,7 @@ function resizeEditors() {
     } else if(window.matchMedia('(orientation: portrait)').matches) {
         resizeEditorsPortrait();
     }
+    //REsize the actual textarea-----------------------------------------------------
 }
 
 function resizeEditorsLandscape() {
