@@ -19,6 +19,7 @@ var downloadName = "download"; //this is what the user can change
 var useNames = false;
 var allChars = true;
 var troubleRunKeys;
+var escaping = true;
 
 $(document).ready(function() {
     preparePage();
@@ -31,16 +32,16 @@ $(document).ready(function() {
     $(window).resize(function() {
         resizeEditors();
     });
-    $("#escaped-textarea").attr("disabled", "disabled");
 });
 
 
 
 /*---------Used once when page first loads and on resize------------*/
 function preparePage() {
+    $("#escaped-textarea").attr("disabled", "disabled");
     resizeEditors();
     populateNameField();
-    $("#settings-box,#copied,#saved,#setting-saved,#downloaded").hide();
+    $("#settings-box,#copied,#saved,#setting-saved,#downloaded,#switchoff-button").hide();
     $("#escaped-textarea").val(placeholderText);
     $("#entities-no,#allchar-yes").attr("checked", "true");
     editorHandling(2);
@@ -229,6 +230,27 @@ function copyInput(source) {
         document.execCommand("copy");
         $("#copied").fadeIn(700);
         $("#copied").fadeOut(700);
+    }
+}
+function toggleEscaping() {
+    if(escaping) {
+        escaping = false;
+        $("#switchon-button").hide();
+        $("#switchoff-button").show();
+        $("#title").html("HTML Un-Escaper");
+        $("#un-title").html("Un-Escaped (view only)");
+        $("#esc-title").html("Escaped");
+        $("#unescaped-textarea").prop("disabled", true);
+        $("#escaped-textarea").prop("disabled", false);
+    } else {
+        escaping = true;
+        $("#switchoff-button").hide();
+        $("#switchon-button").show();
+        $("#title").html("HTML Escaper");
+        $("#un-title").html("Un-Escaped");
+        $("#esc-title").html("Escaped (view only)");
+        $("#escaped-textarea").prop("disabled", true);
+        $("#unescaped-textarea").prop("disabled", false);
     }
 }
 

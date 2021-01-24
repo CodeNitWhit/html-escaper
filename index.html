@@ -16,7 +16,7 @@
         <h1 id="title">HTML Escaper</h1>
         <div id="container">
             <div id="unescaped" class="tile">
-                <h2 class="tile-title">Un-Escaped</h2>
+                <h2 id="un-title" class="tile-title">Un-Escaped</h2>
                 <div id="unescaped-container" class="editor-container">
                     <div id="gutter1" class="gutter">
                         <div id="lg1" class="gutter-number">1</div>
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div id="escaped" class="tile">
-                <h2 class="tile-title">Escaped &#40;view only&#41;</h2>
+                <h2 id="esc-title" class="tile-title">Escaped &#40;view only&#41;</h2>
                 <div id="escaped-container" class="editor-container">
                     <div id="gutter2" class="gutter">
                         <div id="rg1" class="gutter-number">1</div>
@@ -88,6 +88,8 @@
     </body>
     <footer id="footer">
         <button id="settings-button" class="fas fa-cog footer-icon" onclick="toggleSettings()"></button>
+        <button id="switchon-button" class="fas fa-toggle-on footer-icon" onclick="toggleEscaping()"></button>
+        <button id="switchoff-button" class="fas fa-toggle-off footer-icon" onclick="toggleEscaping()"></button>
         <button id="github-button" class="fab fa-github footer-icon" onclick="window.open('https://github.com/CodeNitWhit/html-escaper','_blank')"></button>
     </footer>
     </html>
