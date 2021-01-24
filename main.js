@@ -72,7 +72,6 @@ function resizeEditorsPortrait() {
 function editorHandling() {
     if(escaping) {
         escapeText();
-        //createEscapeList();
     } else {
         unescapeText();
     }
@@ -389,85 +388,3 @@ function toggleNames() {
     $("#setting-saved").fadeIn(700);
     $("#setting-saved").fadeOut(700);
 }
-
-
-
-
-
-
-/*function createEscapeList() {
-    //let charsArr = escapeDictionary["chars"];
-    //let escapedChar;
-    alert(escapeDictionary["chars"].length + " + " + escapeDictionary["numerical"].length);
-    for(let i = 0; i < charsArr.length;i++) {
-        if(charsArr[i] === "#") {
-            escapedChar = escapeSelector("\#");
-            alert(escapedChar);
-        } else if(charsArr[i] === ";") {
-            escapedChar = escape("\;");
-            alert(escapedChar);
-        } else if(charsArr[i] === "&") {
-            escapedChar = escape("\&");
-            alert(escapedChar);
-        } else if(charsArr[i] === ",") {
-            escapedChar = escape("\,");
-            alert(escapedChar);
-        } else if(charsArr[i] === ".") {
-            escapedChar = escape("\.");
-            alert(escapedChar);
-        } else if(charsArr[i] === "+") {
-            escapedChar = escape("\+");
-            alert(escapedChar);
-        } else if(charsArr[i] === "*") {
-            escapedChar = escape("\*");
-            alert(escapedChar);
-        } else if(charsArr[i] === "~") {
-            escapedChar = escape("\~");
-            alert(escapedChar);
-        } else if(charsArr[i] === "'") {
-            escapedChar = escape("\'");
-            alert(escapedChar);
-        } else if(charsArr[i] === ":") {
-            escapedChar = escape("\:");
-            alert(escapedChar);
-        } else if(charsArr[i] === "!") {
-            escapedChar = escape("\!");
-            alert(escapedChar);
-        } else if(charsArr[i] === "^") {
-            escapedChar = escape("\^");
-            alert(escapedChar);
-        } else if(charsArr[i] === "$") {
-            escapedChar = escape("\$");
-            alert(escapedChar);
-        } else if(charsArr[i] === "[") {
-            escapedChar = escape("\[");
-            alert(escapedChar);
-        } else if(charsArr[i] === "]") {
-            escapedChar = escape("\]");
-            alert(escapedChar);
-        } else if(charsArr[i] === "(") {
-            escapedChar = escape("\(");
-            alert(escapedChar);
-        } else if(charsArr[i] === ")") {
-            escapedChar = escape("\)");
-            alert(escapedChar);
-        } else if(charsArr[i] === "=") {
-            escapedChar = escape("\=");
-            alert(escapedChar);
-        } else if(charsArr[i] === ">") {
-            escapedChar = escape("\>");
-            alert(escapedChar);
-        } else if(charsArr[i] === "|") {
-            escapedChar = escape("\|");
-            alert(escapedChar);
-        } else if(charsArr[i] === "/") {
-            escapedChar = escape("\/");
-            alert(escapedChar);
-        } else {
-            escapedChar = escape(charsArr[i]);
-            alert(escapedChar);
-        }
-        charsArray[i] = escapedChar;
-    }
-    $("#escaped-text-area").val(charsArr.join());
-}*/
