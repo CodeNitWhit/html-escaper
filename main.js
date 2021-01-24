@@ -62,6 +62,7 @@ $(document).ready(function() {
 function setMobileBool() {
     if (/Mobi|Android/i.test(navigator.userAgent)) {
         isMobile = true;
+        alert("You are on a mobile device!");
     }
 }
 
