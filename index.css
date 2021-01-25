@@ -5,10 +5,8 @@
     font-style: normal;
 }
 
-root {
-    height:auto;
-}
-
+html { height: 100vh; }
+body { height: 100%; }
 body {
     background-color:#8a5101;
 }
