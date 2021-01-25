@@ -21,7 +21,6 @@ var useNames = false;
 var allChars = true;
 var troubleRunKeys;
 var escaping = false;
-var isMobile = false;
 
 
 
@@ -44,31 +43,8 @@ $(document).ready(function() {
             editorHandling();
         }
     });
-    if(isMobile) {
-        $(window).on("orientationchange", function(){
-            resizeEditors();
-            if ($.browser.mozilla){
-                $('body').css('MozTransform','scale("1")');
-            } else {
-                $('body').css('zoom', '100%');
-            }
-        });
-    } else {
-        $(window).on("resize", function(){
-            resizeEditors();
-        });
-    }
 });
 
-
-
-
-function setMobileBool() {
-    if (/Mobi|Android/i.test(navigator.userAgent)) {
-        isMobile = true;
-        alert("You are on a mobile device!");
-    }
-}
 
 
 
@@ -77,9 +53,7 @@ function setMobileBool() {
 
 /*---------Used once when page first loads and on resize------------*/
 function preparePage() {
-    setMobileBool();
     $("#escaped-textarea").attr("disabled", "disabled");
-    resizeEditors();
     populateNameField();
     $("#entities-no").attr("checked", "true");
     $("#allchar-yes").attr("checked", "true");
@@ -88,32 +62,6 @@ function preparePage() {
     editorHandling();
     escaping = true;
 }
-
-function resizeEditors() {
-    if(window.matchMedia('(orientation: landscape)').matches) {
-        resizeEditorsLandscape();
-    } else if(window.matchMedia('(orientation: portrait)').matches) {
-        resizeEditorsPortrait();
-    }
-    //REsize the actual textarea-----------------------------------------------------
-}
-
-function resizeEditorsLandscape() {
-    let editorHeight = $(window).height() - $("#title").height() - $("#footer").height() - 20;
-    $(".tile").height(editorHeight);
-}
-
-function resizeEditorsPortrait() {
-    let totalHeight = $(window).height() - $("#title").height() - $("#footer").height();
-    let eachHeight = (totalHeight/2) - 20;
-    $(".tile").height(eachHeight);
-}
-
-
-
-
-
-
 
 
 

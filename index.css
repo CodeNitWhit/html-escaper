@@ -25,15 +25,18 @@ button {
     overflow-x:hidden;
 }
 
+#title-container {
+    height:10vh;
+}
+
 /*--TITLE/HEADER--*/
 #title {
     text-align:center;
     color:#f5c98e;
     text-shadow:2px 2px black;
-    height:7vh;
     margin:0;
     font-family: 'YuseiMagic-Regular';
-    font-size: 35px;
+    font-size:40px;;
 }
 
 /*--BODY--*/
@@ -44,6 +47,7 @@ button {
         justify-content:space-around;
     }
     .tile {
+        height:79vh;
         width: 47vw;
     }
 }
@@ -54,6 +58,7 @@ button {
         flex-direction:column;
     }
     .tile {
+        height: 38vh;
         width: 90vw;
         margin:0 auto;
         margin-bottom: 10px;
