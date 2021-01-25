@@ -27,6 +27,7 @@ button {
 
 #title-container {
     height:10vh;
+    width:100vw;
 }
 
 /*--TITLE/HEADER--*/
@@ -36,7 +37,7 @@ button {
     text-shadow:2px 2px black;
     margin:0;
     font-family: 'YuseiMagic-Regular';
-    font-size:40px;;
+    font-size:5vh;
 }
 
 /*--BODY--*/
