@@ -279,7 +279,7 @@ function extractTroubleChars(arr) {
 function createTroubleKey(troubleArr, originalArr) {
     let currentIndex;
     let currentChar;
-    var currentOrigIndex = 0;
+    var currentOrigIndex = -1;
     let troubleRunKeys = {
         "indexes":[]
     };
