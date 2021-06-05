@@ -6,9 +6,9 @@
         <meta property="og:description" content="X" />
         <title>HTML Escaper</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="index.css">
         <script src="main.js"></script>
     </head>
@@ -26,8 +26,8 @@
                     <textarea id="unescaped-textarea" class="editor-textarea" data-gramm_editor="false" autocorrect="false" autocapitalize="none" autocomplete="off" spellcheck="false" wrap="soft"></textarea>
                 </div>
                 <div id="sbc1" class="setting-but-container">
-                    <button id="copy-button1" class="fas fa-copy editor-icon" onclick="copyInput(1)"></button>
-                    <button id="download-button1" class="fas fa-download editor-icon" onclick="generateDownload(1)"></button>
+                    <button id="copy-button1" class="fa fa-copy editor-icon" onclick="copyInput(1)"></button>
+                    <button id="download-button1" class="fa fa-download editor-icon" onclick="generateDownload(1)"></button>
                 </div>
             </div>
             <div id="escaped" class="tile">
@@ -39,8 +39,8 @@
                     <textarea id="escaped-textarea" class="editor-textarea" data-gramm_editor="false" autocorrect="false" autocapitalize="none" autocomplete="off" spellcheck="false" wrap="soft"></textarea>
                 </div>
                 <div id="sbc2" class="setting-but-container">
-                    <button id="copy-button2" class="fas fa-copy editor-icon" onclick="copyInput(2)"></button>
-                    <button id="download-button2" class="fas fa-download editor-icon" onclick="generateDownload(2)"></button>
+                    <button id="copy-button2" class="fa fa-copy editor-icon" onclick="copyInput(2)"></button>
+                    <button id="download-button2" class="fa fa-download editor-icon" onclick="generateDownload(2)"></button>
                 </div>
             </div>
         </div>
@@ -104,9 +104,9 @@
         <a id="download-link">You shouldn't be seeing this...</a>
     </body>
     <footer id="footer">
-        <button id="settings-button" class="fas fa-cog footer-icon" onclick="toggleSettings()"></button>
-        <button id="switchon-button" class="fas fa-toggle-on footer-icon" onclick="toggleEscaping()"></button>
-        <button id="switchoff-button" class="fas fa-toggle-off footer-icon" onclick="toggleEscaping()"></button>
-        <button id="github-button" class="fab fa-github footer-icon" onclick="window.open('https://github.com/CodeNitWhit/html-escaper','_blank')"></button>
+        <button id="settings-button" class="fa fa-cog footer-icon" onclick="toggleSettings()"></button>
+        <button id="switchon-button" class="fa fa-toggle-on footer-icon" onclick="toggleEscaping()"></button>
+        <button id="switchoff-button" class="fa fa-toggle-off footer-icon" onclick="toggleEscaping()"></button>
+        <button id="github-button" class="fa fa-github footer-icon" onclick="window.open('https://github.com/CodeNitWhit/html-escaper','_blank')"></button>
     </footer>
     </html>

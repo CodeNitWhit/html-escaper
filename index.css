@@ -227,7 +227,7 @@ footer {
 }
 
 .footer-icon {
-    height:90%;
+    height:auto;
     width:auto;
     color: #f5c98e;
     font-size: 6vh;
